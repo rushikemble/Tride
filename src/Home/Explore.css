@@ -1,0 +1,226 @@
+.explore-sctn {
+  padding-top: 150px;
+  padding-bottom: 60px;
+}
+.explore-container {
+  padding-right: 2rem;
+  padding-left: 2rem;
+  max-width: 1320px;
+  margin: auto;
+}
+
+.simple .is-inview {
+  opacity: 1;
+}
+.col-xs-12 > h4 {
+  font-size: 2rem;
+  font-family: "BonVivantSerif-Bold";
+
+  padding-bottom: 20px;
+}
+.title-caption {
+  font-family: "BonVivantSerif-Bold";
+  font-size: 2rem;
+}
+.hotel-img {
+  width: 100%;
+  height: 580px;
+  overflow: hidden;
+  position: relative;
+}
+.hotel-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hotel-caption {
+  padding: 30px 0;
+  font-family: "BonVivantSerif-Bold";
+  font-size: 1.2rem;
+}
+
+.sep-haut {
+  height: 250px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: -120px auto 60px;
+}
+.sep-bas {
+  height: 520px;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 60px auto 60px;
+}
+.restaurant-img {
+  width: 100%;
+  height: 580px;
+  overflow: hidden;
+  position: relative;
+}
+.restaurant-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurant-caption {
+  padding: 30px 0;
+  font-family: "BonVivantSerif-Bold";
+  font-size: 1.2rem;
+}
+.col-xs-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.service-img {
+  width: 100%;
+  height: 580px;
+  overflow: hidden;
+  position: relative;
+}
+.service-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 0;
+}
+.service-caption > h2 {
+  font-size: 1.4rem;
+  padding: 1rem;
+  font-family: "BonVivantSerif-Bold";
+}
+.services-heading {
+  width: 90%;
+}
+.center-service-cards {
+  width: 90%;
+}
+/* Footer css */
+.footer-link-container {
+  text-align: center;
+  font-family: "BonVivantSerif";
+}
+.container {
+  max-width: 1320px;
+  margin: auto;
+}
+.addresses > h3 {
+  font-family: "BonVivantSerif";
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+footer hr {
+  border: 1px solid #857b67;
+  opacity: 0.3;
+  margin: 60px 0;
+  width: 100%;
+}
+.socials {
+  justify-content: space-between !important;
+  padding: 0 1.5rem;
+  width: 100%;
+}
+
+.social-name {
+  font-size: 1.5rem;
+}
+.bottom-lg {
+  font-size: 0.7rem;
+  font-family: "BonVivantSerif";
+  text-align: center;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 75em) {
+  .explore-container {
+    width: 100%;
+  }
+  .center-lg {
+    justify-content: center;
+    text-align: center;
+  }
+  .col-lg-4 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+  .col-lg-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+  .container {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 62em) {
+  .explore-container {
+    width: 61rem;
+  }
+}
+@media only screen and (min-width: 48em) {
+}
+.row {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -1rem;
+  margin-left: -1rem;
+  align-items: center;
+}
+@media screen and (max-width: 1090px) {
+  .explore-sctn {
+    padding: 40px 0 40px;
+  }
+  .explore-container {
+    padding: 0 1rem !important;
+    position: relative;
+  }
+  .row {
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .row .col-xs-12 {
+    order: 1;
+  }
+  .row .col-xs-12:nth-child(2) {
+    order: 0;
+  }
+  .hotel-img {
+    height: 400px;
+  }
+  .hotel-caption {
+    padding: 30px 0 100px;
+  }
+  .reastaurant-img {
+    height: 400px;
+  }
+  .reastaurant-caption {
+    padding: 30px 0 100px;
+  }
+  .title-caption {
+    font-size: 1.7rem;
+  }
+  .center-xs {
+    justify-content: center;
+    text-align: center;
+  }
+  .sep-haut {
+    margin-top: 0;
+    height: 120px;
+  }
+  .sep-bas {
+    background: transparent;
+    height: 0px;
+  }
+}

@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "BonVivantSerif";
+  src: url(../media/BonVivantSerif.otf);
+}
+.home-container {
+  width: 100vw;
+  overflow: auto;
+  background-color: #f9eac9;
+}
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 80vh;
+}
+.hero-text-container {
+  width: 45%;
+}
+.hero-text-container > .herotext-mask {
+  width: 100%;
+  overflow-y: hidden;
+}
+.hero-text-container > h1 {
+  text-align: center;
+  margin: 0;
+  font-size: 5rem;
+  font-family: "BonVivantSerif";
+  font-weight: 400;
+}
+.hero-img-container > img {
+  width: 550px;
+}
+html.w-mod-touch * {
+  background-attachment: scroll !important;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.heading-hero {
+  position: relative;
+  font-size: 5rem;
+  font-family: "BonVivantSerif";
+  margin-bottom: 0;
+  padding-top: 0.2em;
+  line-height: 0.6;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.show-on-load-1st {
+  animation: fadeUp 1.5s ease backwards;
+}
+@keyframes fadeUp {
+  0% {
+    transform: translate3d(0px, 150%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+
+  100% {
+    transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .hero-wrapper {
+    height: 100vh;
+    flex-direction: column;
+  }
+  .heading-hero {
+    font-size: 4rem;
+    padding-top: 0.4em;
+  }
+  .hero-text-container {
+    width: 50%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero-text-container {
+    width: 90%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .heading-hero {
+    font-size: 3rem;
+  }
+  .hero-wrapper {
+    height: 110vh;
+  }
+}
+@media screen and (max-width: 426px) {
+  .heading-hero {
+    font-size: 2.5rem;
+  }
+  .hero-img-container > img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .heading-hero {
+    font-size: 2.5rem;
+  }
+  .hero-text-container {
+    width: 90%;
+  }
+  .hero-img-container > img {
+    width: 350px;
+  }
+  .hero-wrapper {
+    height: 100vh;
+  }
+}

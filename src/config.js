@@ -1,0 +1,2 @@
+export const BEARER_TOKEN =
+  "HR6RWIZUH9_hoyzZFCbS-mvcGnjE1gJvQhrWftdbCQRBMX8HzvPpNGqTK1I540VgXC0WkxqXaCIYnjVdBpymJpN83ao_1oNQRBmXt7lL_Ns7l1JiFzFpsJnX37xIYXYxs";

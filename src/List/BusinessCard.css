@@ -1,0 +1,134 @@
+h4 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.List-container {
+  padding: "60px";
+}
+.card-container {
+  padding: 20px;
+  margin: 24px auto;
+  border: 1px solid #eeeeef;
+  border-radius: 16px;
+  display: flex;
+  /* height: 30vh; */
+  background-color: rgba(255, 255, 255, 0.26);
+  width: 60vw;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.card-container:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-img-container {
+  width: 30%;
+  max-height: 30vh;
+  margin-bottom: 15px;
+}
+.card-img-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.card-data-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px;
+  justify-content: flex-start;
+  width: 70%;
+}
+.card-data-container > h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: "BonVivantSerif-Bold";
+
+  font-size: 1.8rem;
+}
+.rating-div {
+  display: flex;
+}
+.rating-div > .MuiRating-root {
+  height: 25px;
+  margin-right: 10px;
+}
+
+.card-data-container > h4 {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+.is-open-div {
+  display: flex;
+  margin: 10px 0;
+  font-size: 1rem;
+  font-family: "BonVivantSerif";
+}
+.location {
+  display: flex;
+  margin: 10px 0;
+  font-size: 1rem;
+  font-family: "BonVivantSerif";
+}
+.phone-div {
+  display: flex;
+  font-size: 1rem;
+  margin: 10px 0;
+  font-family: "BonVivantSerif";
+}
+.location > .MuiSvgIcon-root {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+.phone-div > .MuiSvgIcon-root {
+  margin-right: 5px;
+  font-size: 1.2rem;
+}
+.card-btn-div {
+  width: 100%;
+  padding: 12px 0;
+  border-top: 1px solid rgba(128, 128, 128, 0.377);
+  margin-top: 5px;
+}
+.card-btn-div > a > button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: 1px solid #c7c7c7;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "BonVivantSerif";
+}
+.card-btn-div > a > button:hover {
+  background-color: rgba(128, 128, 128, 0.356);
+}
+@media screen and (max-width: 1090px) {
+  .card-container {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 786px) {
+  .List-container {
+    padding: 50px;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-img-container {
+    width: 45%;
+  }
+  .card-data-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .List-container {
+    padding: 5px;
+  }
+  .card-img-container {
+    width: 60%;
+  }
+}

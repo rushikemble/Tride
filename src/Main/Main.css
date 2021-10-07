@@ -1,0 +1,25 @@
+.main-wrapper {
+  min-height: 100vh;
+
+  /* background: linear-gradient(
+    156deg,
+    rgba(250, 235, 202, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(69, 173, 206, 1) 100%
+  ); */
+  background-image: linear-gradient(
+    to right bottom,
+    #f6e6b3,
+    #ffe3c6,
+    #ffe5df,
+    #ffecf4,
+    #fff5fe,
+    #f7f0fc,
+    #edebf9,
+    #e2e6f6,
+    #c6d6ef,
+    #a4c7e7,
+    #7bbadd,
+    #45adce
+  );
+}
