@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ce16df6c.chunk.css",
+    "main.js": "/static/js/main.f37ee239.chunk.js",
+    "main.js.map": "/static/js/main.f37ee239.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.709ce5f9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.709ce5f9.js.map",
+    "static/js/2.04755196.chunk.js": "/static/js/2.04755196.chunk.js",
+    "static/js/2.04755196.chunk.js.map": "/static/js/2.04755196.chunk.js.map",
+    "static/js/3.03a7d187.chunk.js": "/static/js/3.03a7d187.chunk.js",
+    "static/js/3.03a7d187.chunk.js.map": "/static/js/3.03a7d187.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.ce16df6c.chunk.css.map": "/static/css/main.ce16df6c.chunk.css.map",
+    "static/js/2.04755196.chunk.js.LICENSE.txt": "/static/js/2.04755196.chunk.js.LICENSE.txt",
+    "static/media/Attraction.a04d95ba.jpg": "/static/media/Attraction.a04d95ba.jpg",
+    "static/media/App.css": "/static/media/BonVivantSerif.cb535234.otf",
+    "static/media/Flight.067b2088.jpg": "/static/media/Flight.067b2088.jpg",
+    "static/media/Hotel.ea33c221.jpg": "/static/media/Hotel.ea33c221.jpg",
+    "static/media/hero-bg.87d7c102.png": "/static/media/hero-bg.87d7c102.png",
+    "static/media/restaurant.d9379fdd.jpg": "/static/media/restaurant.d9379fdd.jpg",
+    "static/media/unique-stays.9b3d62d3.jpg": "/static/media/unique-stays.9b3d62d3.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.709ce5f9.js",
+    "static/js/2.04755196.chunk.js",
+    "static/css/main.ce16df6c.chunk.css",
+    "static/js/main.f37ee239.chunk.js"
+  ]
+}
