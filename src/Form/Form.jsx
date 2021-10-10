@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./Form.css";
 import axios from "axios";
 import { Search } from "@material-ui/icons";
@@ -9,28 +9,26 @@ function Form({ setBusinessData }) {
   const [type, setType] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
-  console.log(location, type);
 
   const typeEvent = (e) => {
     setType(([e.target.name] = e.target.value));
   };
 
-  const submitForm = (e) => {
-    fetchData(location, type);
-    e.preventDefault();
-  };
-
-  const fetchData = async (location, type) => {
-    const Token = process.env.REACT_APP_BEARER_TOKEN;
+  const fetchData = async (type, location) => {
+    const Token = process.env.REACT_APP_API_KEY;
     await axios
-      .get(
-        `https://api.yelp.com/v3/businesses/search?term=${type}&location=${location}&sort_by=best_match`,
-        {
-          headers: {
-            Authorization: `Bearer ${Token}`,
-          },
-        }
-      )
+      .get(`/search?term=${type}&location=${location}`, {
+        headers: {
+          Authorization: `Bearer ${Token}`,
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Origin": "https://api.yelp.com/v3/businesses",
+        },
+        params: {
+          term: `${type}`,
+          location: `${location}`,
+        },
+      })
+      // .then((result) => result.json())
       .then((res) => {
         setLoading(false);
         setError(false);
@@ -41,7 +39,10 @@ function Form({ setBusinessData }) {
         setLoading(false);
       });
   };
-
+  const submitForm = (e) => {
+    fetchData(type, location);
+    e.preventDefault();
+  };
   return (
     <div className="form-container">
       <div className="form-inner-container">

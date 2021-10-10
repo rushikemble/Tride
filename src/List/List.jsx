@@ -4,7 +4,6 @@ import BusinessCard from "./BusinessCard";
 import "./BusinessCard.css";
 
 function List({ businessData }) {
-  console.log(businessData);
   return (
     <div className="List-container">
       <div className="list-filter-container"></div>
