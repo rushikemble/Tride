@@ -21,14 +21,12 @@ function Form({ setBusinessData }) {
         headers: {
           Authorization: `Bearer ${Token}`,
           "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Origin": "https://api.yelp.com/v3/businesses",
         },
         params: {
           term: `${type}`,
           location: `${location}`,
         },
       })
-      // .then((result) => result.json())
       .then((res) => {
         setLoading(false);
         setError(false);
