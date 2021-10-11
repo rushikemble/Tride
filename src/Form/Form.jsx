@@ -18,7 +18,11 @@ function Form({ setBusinessData }) {
     const Token = process.env.REACT_APP_API_KEY;
     await axios
       .get(
-        `https://thingproxy.freeboard.io/fetch/https://api.yelp.com/v3/businesses/search?term=${type}&location=${location}/allow-cors`,
+        (`https://thingproxy.freeboard.io/fetch/https://api.yelp.com/v3/businesses/search?term=${type}&location=${location}`,
+        {
+          mode: "cors",
+          credentials: "include",
+        }),
         {
           headers: {
             Authorization: `Bearer ${Token}`,
