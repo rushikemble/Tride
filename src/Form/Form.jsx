@@ -17,16 +17,19 @@ function Form({ setBusinessData }) {
   const fetchData = async (type, location) => {
     const Token = process.env.REACT_APP_API_KEY;
     await axios
-      .get(`/search?term=${type}&location=${location}`, {
-        headers: {
-          Authorization: `Bearer ${Token}`,
-          "Access-Control-Allow-Origin": "*",
-        },
-        params: {
-          term: `${type}`,
-          location: `${location}`,
-        },
-      })
+      .get(
+        `https://thingproxy.freeboard.io/fetch/https://api.yelp.com/v3/businesses/search?term=${type}&location=${location}/allow-cors`,
+        {
+          headers: {
+            Authorization: `Bearer ${Token}`,
+            "Access-Control-Allow-Origin": "*",
+          },
+          params: {
+            term: `${type}`,
+            location: `${location}`,
+          },
+        }
+      )
       .then((res) => {
         setLoading(false);
         setError(false);
